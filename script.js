@@ -28,6 +28,8 @@ function changeValue (event) {
   // console.log(inputElement, requiredValue)
 
   if(inputVal.length === 0) { //아무것도 입력하지 않았을 때
-    requiredValue.classList.toggle('show');
+    requiredValue.classList.add('show');
+  } else {
+    requiredValue.classList.remove('show');
   }
 }
